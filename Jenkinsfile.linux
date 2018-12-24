@@ -100,7 +100,7 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'src/out/Release/**/*.deb', 'src/out/Release/**/*.rpm', fingerprint: true
+                    archiveArtifacts artifacts: 'src/out/Release/**/*.deb,src/out/Release/**/*.rpm', fingerprint: true
                 }
             }
         }
