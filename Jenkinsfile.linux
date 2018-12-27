@@ -14,6 +14,7 @@ pipeline {
         }
     }
     environment {
+        CHANNEL = 'dev'
         GIT_CACHE_PATH = "/var/lib/jenkins/cache"
         REFERRAL_API_KEY = credentials('REFERRAL_API_KEY')
         BRAVE_GOOGLE_API_KEY = credentials('npm_config_brave_google_api_key')
